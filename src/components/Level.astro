@@ -1,0 +1,73 @@
+---
+const { bg } = Astro.props;
+---
+
+<section class={`relative h-full w-screen snap-start overflow-hidden ${bg}`}>
+  <!-- SKY OBJECTS -->
+  <div class="absolute top-16 right-40 text-5xl animate-pulse">
+    <img src="/src/assets/sun.png" alt="Star" class="w-42" />
+  </div>
+  <div class="absolute top-20 left-32 text-4xl">☁️</div>
+
+  <!-- HERO TEXT (NO CONTAINER, YOUR FONT) -->
+  <div class="absolute top-[28%] left-1/2 -translate-x-1/2 text-center z-10">
+    <h1
+      class="text-white text-6xl mb-6 tracking-widest
+         whitespace-nowrap"
+    >
+      VANSHIKHA SRI
+    </h1>
+
+    <h2 class="text-yellow-400 text-3xl mb-6 uppercase">
+      FULL STACK DEVELOPER
+    </h2>
+    <p
+      class="text-white text-2xl max-w-xl mx-auto mb-8 opacity-90
+         font-sans"
+    >
+      Crafting delightful web experiences through code, creativity, and
+      curiosity.
+    </p>
+
+    <div class="flex gap-6 justify-center">
+      <button
+        class="bg-red-600 border-4 border-black px-8 py-3
+               text-white text-xs
+               shadow-[4px_4px_0_rgba(0,0,0,1)]
+               hover:-translate-y-1 active:translate-y-1 transition-all"
+      >
+        PRESS START
+      </button>
+
+      <button
+        class="bg-emerald-600 border-4 border-black px-8 py-3
+               text-white text-xs
+               shadow-[4px_4px_0_rgba(0,0,0,1)]
+               hover:-translate-y-1 active:translate-y-1 transition-all"
+      >
+        CONTACT US
+      </button>
+    </div>
+  </div>
+
+  <!-- CASTLE -->
+  <img
+    src="/src/assets/castle.png"
+    class="absolute bottom-9.5 left-20 w-140 select-none"
+    alt="Castle"
+  />
+
+  <!-- TREES -->
+  <div class="absolute bottom-18 right-20 text-8xl select-none">
+    <img src="/src/assets/tree.png" alt="Tree" class="w-52" />
+  </div>
+
+  <!-- GROUND -->
+  <div class="absolute bottom-0 left-0 w-full h-20">
+    <img
+      src="/src/assets/brick.jpg"
+      alt="Ground"
+      class="w-full object-cover select-none"
+    />
+  </div>
+</section>
